@@ -7,7 +7,8 @@ const EditStudent = () => {
     const studentId = useLocation().state.data
     // console.log(studentId)
 
-    const student = useSelector(state => state.Student.filter((stud) => stud.id == studentId))
+    const stud = useSelector(state => state.Student)
+    const student = stud.filter((stud) => stud.id === parseInt(studentId))
     // console.log(student)
 
     const navigate = useNavigate()
