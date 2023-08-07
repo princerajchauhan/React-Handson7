@@ -25,7 +25,7 @@
 #headBtn:hover{
     filter: drop-shadow(0 0 15px rgb(162, 159, 159));
     background-color: white;
-    color: white;
+    color: black;
 }
 
 #tblStyle{
