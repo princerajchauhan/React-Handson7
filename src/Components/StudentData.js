@@ -9,21 +9,6 @@ const StudentData = () => {
     const dispatch = useDispatch()
     // const navigate = useNavigate()
 
-    const editStyle = {
-        textDecoration: 'none',
-        color: 'white',
-        backgroundColor:'green',
-        borderRadius: '5px',
-        padding: '3px 8px'
-    }
-    
-    const delStyle = {
-        cursor: 'pointer',
-        backgroundColor:'tomato',
-        padding:'5px 10px',
-        color: 'black'
-    }
-
     return (
         <>
             <table id='tblStyle' cellSpacing='1'>
@@ -47,8 +32,8 @@ const StudentData = () => {
                                     <td>{element.Course}</td>
                                     <td>{element.Batch}</td>
                                     {/* <button onClick={() => { navigate('/student/editstudent', { state: `${element.id}` }) }} style={{ cursor: 'pointer' }}>Edit</button> */}
-                                    <td><Link state={{ data: `${element.id}`}} to="/student/editstudent" style={editStyle}>Edit</Link></td>
-                                    <td onClick={() => dispatch(DeleteStudent({index}))}><i className="fa fa-trash" style={{...editStyle, ...delStyle}}></i></td>
+                                    <td><Link state={{ data: `${element.id}`}} to="/student/editstudent" className="editStyle" >Edit</Link></td>
+                                    <td onClick={() => dispatch(DeleteStudent({index}))}><i className="fa fa-trash delStyle"></i></td>
                                 </tr>
                             )
                         })

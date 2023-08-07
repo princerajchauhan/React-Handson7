@@ -14,7 +14,7 @@
 #headBtn{
     padding: 10px 30px;
     font-size: 22px;
-    border-radius: 40px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: black;
     color: white;
@@ -58,6 +58,22 @@ fieldset{
     font-size: 25px;
     border-radius: 40px;
     cursor: pointer;
+}
+
+.editStyle {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.delStyle {
+    cursor: pointer;
+    background-color: tomato;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
 }
 
 /* *************************** RESPONSIVE *********************** */
